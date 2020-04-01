@@ -1,0 +1,18 @@
+<?php
+if ($_SERVER['SERVER_NAME'] == "eurowebpage.com") // Heure serveur en ligne
+{
+   $number_of_the_day= "%e"; // Nombre du jour sans "0"
+}
+else
+{
+   $number_of_the_day = "%#d";  // Heure serveur local
+}
+
+setlocale(LC_TIME, 'fr_FR.utf8','fra'); // I'm french !
+
+//si utilisation de la fonction ucfirst('string') pour "V" Maj. et "J" Maj.
+
+echo ucfirst(strftime('%A '.$number_of_the_day.' %B %Y'));
+
+//  "Vendredi 1 Janvier 2020"  (->  sans "0")
+?> 
