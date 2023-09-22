@@ -1,4 +1,4 @@
-// Exemple pour application de calcul du temps de travail avec fonction start et End
+/pour  application de calcul du temps de travail avec fonction start et End
 
 <?php
 $start_date = strtotime("2009-03-16 11:33:54"); //start date heure
